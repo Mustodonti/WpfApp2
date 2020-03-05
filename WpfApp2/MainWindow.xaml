@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Программа для слежения за файлами" Height="300" Width="1000" Background="Gray">
+        Title="Программа для слежения за файлами" Height="450" Width="1000" Background="Gray">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -51,6 +51,7 @@
                        Text="Введите дату:"
                        HorizontalAlignment="Center"
                 />
+            <DatePicker x:Name="DatePicker1"/>
             <TextBox x:Name="textBox2" 
                      Text="" 
                      AcceptsTab="False" 
@@ -61,6 +62,41 @@
                     x:Name="Button2"
                     Click="Button2_Click"
                     />
+            <TextBlock
+                Margin="0,40,0,0"
+                Foreground="Red"
+                FontStyle="Italic"
+                FontFamily="TimesNewRoman"
+                FontSize="20"
+                Text="Выберите директрорию для удаления:"
+                HorizontalAlignment="Center"
+                />
+            <Button 
+                Content="Обзор"
+                x:Name="Button3"
+                Click="Button3_Click"
+                    />
+            <TextBlock
+                       
+                Foreground="Red"
+                FontStyle="Italic"
+                FontFamily="TimesNewRoman"
+                FontSize="20"
+                Text="Выбранная директория:" 
+                HorizontalAlignment="Center"
+                Margin="135.203,0,134.796,0"
+                />
+            <TextBox 
+                x:Name="textBox3"
+                Text="" 
+                AcceptsTab="False" 
+                RenderTransformOrigin="0.5,0.5"/>
+            <Button 
+                Content="Удалить"
+                x:Name="Button4"
+                Click="Button4_Click"
+                    />
+            
         </StackPanel>
         <TextBlock
             Grid.Column="1"
