@@ -25,7 +25,7 @@
             <Button 
                     Content="Обзор"
                     x:Name="Button1"
-                    Click="Button1_Click"
+                    Click="BrowseForWatch"
                     />
             <TextBlock
                        
@@ -36,11 +36,7 @@
                        Text="Выбранная директория:" 
                        HorizontalAlignment="Center"
                 />
-            <TextBox 
-                     x:Name="textBox1"
-                     Text="" 
-                     AcceptsTab="False" 
-                     RenderTransformOrigin="0.5,0.5">
+            <TextBox x:Name="browsePathTB" Text="" AcceptsTab="False">
             </TextBox>
 
             <TextBlock
@@ -51,16 +47,14 @@
                        Text="Введите дату:"
                        HorizontalAlignment="Center"
                 />
-            <DatePicker x:Name="DatePicker1"/>
-            <TextBox x:Name="textBox2" 
-                     Text="" 
-                     AcceptsTab="False" 
+            <DatePicker x:Name="DatePicker"  />
+            <TextBox x:Name="periodDaysTB" Text="" AcceptsTab="False" 
                      />
             <Button 
                     Content="Старт"
                     Margin="0,20,0,0"
                     x:Name="Button2"
-                    Click="Button2_Click"
+                    Click="CopyMove"
                     />
             <TextBlock
                 Margin="0,40,0,0"
@@ -71,11 +65,7 @@
                 Text="Выберите директрорию для удаления:"
                 HorizontalAlignment="Center"
                 />
-            <Button 
-                Content="Обзор"
-                x:Name="Button3"
-                Click="Button3_Click"
-                    />
+            <Button Content="Обзор" Click="BrowseForDelete" />
             <TextBlock
                        
                 Foreground="Red"
@@ -87,15 +77,11 @@
                 Margin="135.203,0,134.796,0"
                 />
             <TextBox 
-                x:Name="textBox3"
+                x:Name="browsePathToDeleteTB"
                 Text="" 
                 AcceptsTab="False" 
                 RenderTransformOrigin="0.5,0.5"/>
-            <Button 
-                Content="Удалить"
-                x:Name="Button4"
-                Click="Button4_Click"
-                    />
+            <Button Content="Удалить" Click="Delete" />
             
         </StackPanel>
         <TextBlock

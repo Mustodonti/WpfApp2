@@ -7,9 +7,9 @@ using System.Linq;
 
 namespace ASD
 {
-    class Work_With_DirectoryWWD
+    class WorkWithDirectoryWWD
     {
-        static public string Way_To_Folder()
+        static public string WayToFolder()
         {
             FolderBrowserDialog FBD = new FolderBrowserDialog();
             if (FBD.ShowDialog() == DialogResult.OK)
@@ -22,7 +22,7 @@ namespace ASD
                 return "";
             }
         }
-        static public string CreateDirectory_to_TargetPath_WWD001(string Target_Path)
+        static public string CreateDirectoryToTargetPathWWD001(string Target_Path)
         {
             try
             {
